@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{36A51C21-F676-49DB-8B02-EE7C55F1A31D}</ProjectGuid>
+    <ProjectGuid>{281A5E90-D49D-4EA0-8B89-B68869609297}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebServiceSivigila2</RootNamespace>
-    <AssemblyName>WebServiceSivigila2</AssemblyName>
+    <RootNamespace>consumoWebServiceSivigila2</RootNamespace>
+    <AssemblyName>consumoWebServiceSivigila2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -44,9 +44,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,15 +67,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="consultaTablaTipoEventoWS.asmx" />
+    <Content Include="index.html" />
+    <Content Include="script.js" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\consultaTablaTipoEventoWS\consultaTablaTipoEventoWS.disco" />
     <Content Include="Web.config" />
+    <None Include="Web References\consultaTablaTipoEventoWS\consultaTablaTipoEventoWS.wsdl" />
+    <Content Include="Web References\consultaTablaTipoEventoWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="consultaTablaTipoEventoWS.asmx.cs">
-      <DependentUpon>consultaTablaTipoEventoWS.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\consultaTablaTipoEventoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -88,6 +102,25 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:52320/consultaTablaTipoEventoWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\consultaTablaTipoEventoWS\</RelPath>
+      <UpdateFromURL>http://localhost:52320/consultaTablaTipoEventoWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>consumoWebServiceSivigila2_consultaTablaTipoEventoWS_consultaTablaTipoEventoWS</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -102,9 +135,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52320</DevelopmentServerPort>
+          <DevelopmentServerPort>52623</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52320/</IISUrl>
+          <IISUrl>http://localhost:52623/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

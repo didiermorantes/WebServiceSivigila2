@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceSivigila2", "WebServiceSivigila2\WebServiceSivigila2.csproj", "{36A51C21-F676-49DB-8B02-EE7C55F1A31D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumoWebServiceSivigila2", "consumoWebServiceSivigila2\consumoWebServiceSivigila2.csproj", "{281A5E90-D49D-4EA0-8B89-B68869609297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{36A51C21-F676-49DB-8B02-EE7C55F1A31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36A51C21-F676-49DB-8B02-EE7C55F1A31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36A51C21-F676-49DB-8B02-EE7C55F1A31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281A5E90-D49D-4EA0-8B89-B68869609297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281A5E90-D49D-4EA0-8B89-B68869609297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281A5E90-D49D-4EA0-8B89-B68869609297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281A5E90-D49D-4EA0-8B89-B68869609297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
